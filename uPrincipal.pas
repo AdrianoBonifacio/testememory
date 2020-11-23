@@ -19,6 +19,7 @@ type
     procedure Fabricantes1Click(Sender: TObject);
     procedure Medicamentos2Click(Sender: TObject);
     procedure ReacoesAdversasClick(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,7 +42,7 @@ begin
   begin
     try
       frmFabricantes := TfrmFabricantes.Create(Self);
-      frmFabricantes.Show;
+      frmFabricantes.ShowModal;
     finally
       FreeAndNil(frmFabricantes);
     end;
@@ -54,7 +55,7 @@ begin
   begin
     try
       frmMedicamentos := TfrmMedicamentos.Create(Self);
-      frmMedicamentos.Show;
+      frmMedicamentos.ShowModal;
     finally
       FreeAndNil(frmMedicamentos);
     end;
@@ -67,11 +68,16 @@ begin
   begin
     try
       frmReacoes := TfrmReacoes.Create(Self);
-      frmReacoes.Show;
+      frmReacoes.ShowModal;
     finally
       FreeAndNil(frmReacoes);
     end;
   end;
+end;
+
+procedure TfrmPrincipal.Sair1Click(Sender: TObject);
+begin
+  Close;
 end;
 
 end.

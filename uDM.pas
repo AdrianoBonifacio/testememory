@@ -33,12 +33,12 @@ type
     cdsReacoesID_MEDICAMENTO: TSmallintField;
     cdsReacoesDESCRICAO: TStringField;
     cdsReacoesID_MEDICAMENTO_NEW: TSmallintField;
-    cdsFabricantesID_FABRICANTE: TSmallintField;
-    cdsFabricantesNOME_FABRICANTE: TStringField;
     cdsRegistrosID_REGISTRO: TSmallintField;
     cdsRegistrosID_MEDICAMENTO: TSmallintField;
     cdsRegistrosID_REACOES: TSmallintField;
     cdsMedicamntosID_REACOES: TSmallintField;
+    cdsFabricantesID_FABRICANTE: TSmallintField;
+    cdsFabricantesNOME_FABRICANTE: TStringField;
   private
     { Private declarations }
   public

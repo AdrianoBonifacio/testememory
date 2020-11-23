@@ -31,6 +31,7 @@ object DM: TDM
     Top = 24
   end
   object cdsMedicamntos: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspMedicamentos'
@@ -69,6 +70,7 @@ object DM: TDM
   end
   object dspMedicamentos: TDataSetProvider
     DataSet = SqlDtSetMedicamentos
+    Options = [poAllowCommandText]
     Left = 112
     Top = 176
   end
@@ -105,6 +107,7 @@ object DM: TDM
     Top = 128
   end
   object cdsReacoes: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspReacoes'
@@ -127,10 +130,12 @@ object DM: TDM
   end
   object dspReacoes: TDataSetProvider
     DataSet = sqldtsReacoes
+    Options = [poAllowCommandText]
     Left = 248
     Top = 182
   end
   object cdsFabricantes: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspFabricantes'
@@ -146,10 +151,12 @@ object DM: TDM
   end
   object dspFabricantes: TDataSetProvider
     DataSet = sqldtsFabricantes
+    Options = [poAllowCommandText]
     Left = 347
     Top = 176
   end
   object cdsRegistros: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspRegistros'
@@ -168,6 +175,7 @@ object DM: TDM
   end
   object dspRegistros: TDataSetProvider
     DataSet = sqldtsRegistros
+    Options = [poAllowCommandText]
     Left = 448
     Top = 176
   end

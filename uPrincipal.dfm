@@ -1,6 +1,6 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 278
-  Top = 152
+  Left = 198
+  Top = 114
   Width = 979
   Height = 563
   Caption = 'Memory Avalia'#231#227'o'
@@ -45,6 +45,7 @@ object frmPrincipal: TfrmPrincipal
     end
     object Sair1: TMenuItem
       Caption = 'S&air'
+      OnClick = Sair1Click
     end
   end
 end

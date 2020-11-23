@@ -14,10 +14,7 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TfrmCadGen, frmCadGen);
-  Application.CreateForm(TfrmMedicamentos, frmMedicamentos);
   Application.CreateForm(TDM, DM);
-  Application.CreateForm(TfrmReacoes, frmReacoes);
-  Application.CreateForm(TfrmFabricantes, frmFabricantes);
+  Application.CreateForm(TfrmCadGen, frmCadGen);
   Application.Run;
 end.
