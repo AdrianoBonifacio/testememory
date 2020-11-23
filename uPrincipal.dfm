@@ -18,7 +18,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Top = 0
     Width = 963
-    Height = 504
+    Height = 505
     Align = alClient
     TabOrder = 0
   end
@@ -31,9 +31,9 @@ object frmPrincipal: TfrmPrincipal
         Caption = '&Medicamentos'
         OnClick = Medicamentos2Click
       end
-      object ReaesAdversas1: TMenuItem
+      object ReacoesAdversas: TMenuItem
         Caption = 'Rea'#231#245'es Adversas'
-        OnClick = ReaesAdversas1Click
+        OnClick = ReacoesAdversasClick
       end
       object N1: TMenuItem
         Caption = '-'

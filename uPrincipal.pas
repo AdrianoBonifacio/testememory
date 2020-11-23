@@ -15,11 +15,10 @@ type
     Fabricantes1: TMenuItem;
     Sair1: TMenuItem;
     pnl1: TPanel;
-    ReaesAdversas1: TMenuItem;
-    procedure ReaesDiversas1Click(Sender: TObject);
+    ReacoesAdversas: TMenuItem;
     procedure Fabricantes1Click(Sender: TObject);
     procedure Medicamentos2Click(Sender: TObject);
-    procedure ReaesAdversas1Click(Sender: TObject);
+    procedure ReacoesAdversasClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,7 +31,7 @@ var
 implementation
 
 uses
-  uMedicamentos;
+  uMedicamentos, uFabricantes, uReacoes;
 
 {$R *.dfm}
 
@@ -41,7 +40,7 @@ begin
   if (frmFabricantes = nil) then
   begin
     try
-      frmProduto := TfrmFabricantes.Create(Self);
+      frmFabricantes := TfrmFabricantes.Create(Self);
       frmFabricantes.Show;
     finally
       FreeAndNil(frmFabricantes);
@@ -54,7 +53,7 @@ begin
   if (frmMedicamentos = nil) then
   begin
     try
-      frmProduto := TfrmMedicamentos.Create(Self);
+      frmMedicamentos := TfrmMedicamentos.Create(Self);
       frmMedicamentos.Show;
     finally
       FreeAndNil(frmMedicamentos);
@@ -62,12 +61,12 @@ begin
   end;
 end;
 
-procedure TfrmPrincipal.ReaesAdversas1Click(Sender: TObject);
+procedure TfrmPrincipal.ReacoesAdversasClick(Sender: TObject);
 begin
   if (frmReacoes = nil) then
   begin
     try
-      frmProduto := TfrmReacoes.Create(Self);
+      frmReacoes := TfrmReacoes.Create(Self);
       frmReacoes.Show;
     finally
       FreeAndNil(frmReacoes);

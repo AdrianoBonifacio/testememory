@@ -17,7 +17,6 @@ inherited frmFabricantes: TfrmFabricantes
   inherited grpbCadGen: TGroupBox
     Width = 522
     Height = 215
-    Caption = ' Informa'#231#245'es '
     object Label1: TLabel
       Left = 16
       Top = 32

@@ -5,8 +5,8 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, DB, DBClient, ToolWin, ComCtrls, ImgList, ExtCtrls, DBCtrls,
-  StdCtrls, ppDB, ppDBPipe, ppComm, ppRelatv, ppProd, ppClass, ppReport,
-  ppBands, ppCache;
+  StdCtrls; //ppDB, ppDBPipe, ppComm, ppRelatv, ppProd, ppClass, ppReport,
+  //ppBands, ppCache;
 
 type
   TfrmCadGen = class(TForm)
@@ -145,17 +145,17 @@ function TfrmCadGen.GeraProxID(sCampo: string; sTabela: string): Integer;
 var
   ID_Gen : Integer;
 begin
-  Dm.CdsGeraID.Close;
-  Dm.CdsGeraID.CommandText := 'Select Max('+sCampo+') ID From '+sTabela;
-  Dm.CdsGeraID.Open;
+//  Dm.CdsGeraID.Close;
+//  Dm.CdsGeraID.CommandText := 'Select Max('+sCampo+') ID From '+sTabela;
+//  Dm.CdsGeraID.Open;
 
-  ID_Gen := Dm.CdsGeraID.FieldByName('ID').AsInteger + 1;
-  Result := ID_Gen;
+//  ID_Gen := Dm.CdsGeraID.FieldByName('ID').AsInteger + 1;
+//  Result := ID_Gen;
 end;
 
 procedure TfrmCadGen.tbtnImprimirClick(Sender: TObject);
 begin
-  ppRepCadastro.Print;
+//  ppRepCadastro.Print;
 end;
 
 procedure TfrmCadGen.FormClose(Sender: TObject; var Action: TCloseAction);
